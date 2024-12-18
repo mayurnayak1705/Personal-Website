@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mayur Nayak</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mayur Nayak</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Mayur Nayak profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mayur Nayak</h1>
+        <p class="section__text__p2">Software Tester/AI Enthusiatist </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mayur-nayak-274068214'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/mayurnayak1705'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Radisys India Limited</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bacheular degree in computer science<br />S D M College of Engineering and technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am Mayur Nayak, a Software Engineer at Radisys Corporation, based in Bengaluru, Karnataka. With a strong foundation in computer science and a Bachelor's degree from SDM College of Engineering & Technology, I have developed expertise in software development and cutting-edge technologies.
+
+              My professional journey spans over a year, during which I have contributed as a full-time Software Engineer and previously as an Internship Trainee at Radisys. My experience also includes a brief stint as a Full-Stack Developer at Lattech. My technical skill set includes proficiency in Python, deep learning, and working with large language models (LLMs), which aligns with my passion for innovation and problem-solving in AI and software engineering.
+              
+              I continuously strive to enhance my skills through certifications in deep learning, neural networks, and backend development with Node.js. Fluent in English, Kannada, and Hindi, I thrive in multicultural environments and enjoy collaborating with diverse teams.
+              
+              Outside of work, I am driven by curiosity and a commitment to leveraging technology to create impactful solutions. Connect with me on LinkedIn to learn more about my professional journey.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <!-- <h2 class="experience-sub-title">Frontend Development</h2> -->
+            <div class="article-container">
+              <!-- Python Programming -->
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python Programming</h3>
+                  <p>Scripting using libraries to automate daily tasks</p>
+                </div>
+              </article>
+      
+              <!-- Computer Networking -->
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Computer Networking</h3>
+                  <ul>
+                    <li>L2 Protocols - ARP</li>
+                    <li>Security Protocols - TACACS, mTLS</li>
+                    <li>Security Attacks - DDOS Attack</li>
+                  </ul>
+                </div>
+              </article>
+      
+              <!-- Deep Neural Nets -->
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Deep Neural Nets</h3>
+                  <p>Forward Propagation, Backpropagation, Gradient Descent, CNN, RNN</p>
+                </div>
+              </article>
+      
+              <!-- LLMs -->
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>LLMs</h3>
+                  <p>Sequence Models, Attention Models</p>
+                </div>
+              </article>
+      
+              <!-- Robot Framework -->
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Robot Framework</h3>
+                  <p>Automation testing by writing test scripts in Robot Framework</p>
+                </div>
+              </article>
+      
+              <!-- Web Development -->
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Web Development</h3>
+                  <p>Basics of HTML, CSS, JavaScript</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Automated Stock Price Tracker Using Web Scraping</h2>
+            <div class="article-container">
+              <p>This project involves creating an automated bot to track stock data from Yahoo Finance using Python. The script leverages the requests_html library to scrape real-time stock details such as stock name, price, open price, and previous close price. The extracted data, including the current date and time, is then saved into a Google Spreadsheet using the gspread library.
+              <br>
+              <br>
+                Key Features:
+              <br>
+                <br>
+                Web Scraping: Extracts stock information from Yahoo Finance dynamically.
+                <br>
+                <br>
+                Google Sheets Integration: Saves the stock data into a Google Sheet for easy tracking and analysis.
+                <br>
+                <br>
+                Automated Execution: Designed for daily use, automating the data collection process without manual intervention.
+                <br>
+                <br>
+                This solution is efficient for tracking stock prices consistently and can be extended to monitor multiple stocks or generate insights over time.</p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mayurnayak1705/stock_scraper'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Amazon Product Scraper Using Scrapy</h2>
+            <div class="article-container">
+              <p>This project is a Python-based web crawler built using the Scrapy framework to extract product data from Amazon based on a user-specified keyword. The crawler gathers information such as product name, price, ratings, product description, original price, discount percentage, and image URLs, storing it in a structured format like CSV or JSON.
+                <br>
+                Key Features:
+                <br>
+                <br>
+                Dynamic User Input:
+                
+                Users can enter search strings like "shirts for men", which dynamically form search URLs to crawl relevant products.
+                <br>
+                <br>
+                Data Extraction:
+                Scrapes critical product attributes including:
+                Product URL, 
+                Product Name,
+                Price and Original Price,
+                Discount Percentage,
+                Product Ratings,
+                Image URL,
+                Product Description,
+                <br>
+                <br>
+                Avoiding Blocks:
+                
+                Integrated with ScrapeOps API to rotate headers and user-agents on each request to prevent detection and blocking.
+                Pagination Support:
+                
+                Automatically navigates through multiple pages of search results, scraping up to hundreds of items.
+                <br>
+                <br>
+                Data Cleaning:
+                
+                Utilizes pipelines to clean and format the scraped data, such as removing whitespace and adding appropriate symbols (₹ for prices). 
+              </p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mayurnayak1705/Amazon_Scraper/tree/main'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">mayurnayak1705@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Mayur Nayak. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
